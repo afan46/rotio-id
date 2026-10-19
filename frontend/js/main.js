@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Set active nav link based on current page ---------- */
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.navbar-nexora .nav-link').forEach(link => {
+     link.classList.remove('active');
     const href = link.getAttribute('href');
     if (href === currentPage) {
       link.classList.add('active');
