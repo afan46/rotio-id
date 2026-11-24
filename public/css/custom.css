@@ -142,7 +142,7 @@ a { text-decoration: none; }
   font-weight: 600;
   border-radius: var(--n-radius-sm);
   padding: 0.75rem 1.75rem;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   transition: all 0.25s ease;
   border-width: 1.5px;
 }
@@ -156,7 +156,7 @@ a { text-decoration: none; }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(21, 94, 239, 0.32);
+  box-shadow: 0 16px 32px rgba(235, 235, 237, 0.32);
   color: #fff;
 }
 
@@ -229,8 +229,8 @@ a { text-decoration: none; }
   
 }
 
-.navbar-brand-custom span { 
-  color: rgb(52, 40, 40) !important;
+.navbar-brand-custom span {
+  color: rgb(52, 40, 40);
 }
 
 .navbar-nexora .nav-link {
@@ -685,22 +685,34 @@ a { text-decoration: none; }
 .portfolio-overlay span { color: rgba(255,255,255,0.7); font-size: 0.85rem; }
 
 /* Instagram card */
-.testimonial-card {
-  background: #fff;
-  border-radius: var(--n-radius-md);
-  box-shadow: var(--n-shadow-sm);
-  border: 1px solid var(--n-border);
-  padding: var(--n-space-lg);
-  height: 100%;
-}
 
 .instagram-grid {
-  --bs-gutter-x: 1rem;
-  --bs-gutter-y: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 824px;
+  margin-inline: auto;
 }
 
-.instagram-grid > [class*="col-"] {
-  display: flex;
+.instagram-post {
+  --instagram-embed-header: 54px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-post iframe {
+  position: absolute;
+  top: calc(-1 * var(--instagram-embed-header));
+  left: 0;
+  display: block;
+  width: 100%;
+  height: calc(100% + 140px);
+  border: 0;
 }
 
 /* From Uiverse.io by SteveBloX */ 
@@ -861,7 +873,7 @@ a {
   font-size: 0.95rem;
 }
 
-.footer-nexora a:hover { color: #fff; }
+.footer-nexora a:hover { color: #F2A900; }
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -870,20 +882,34 @@ a {
   font-size: 0.85rem;
 }
 
+
 .social-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-  display: flex;
+  background: rgba(255, 255, 255, 0.06);
+  display: inline-flex !important;
   align-items: center;
-  justify-content: center;
+  justify-content: center ;
   color: #fff !important;
+  font-size: 1.4rem; /* Atur ukuran logo di sini (misal: 18px atau 1.15rem) */
+  line-height: 1 ;
+  padding: 0 !important;
+  text-decoration: none;
   transition: all 0.2s ease;
   margin-bottom: 0 !important;
 }
 
-.social-icon:hover { background: var(--n-primary); transform: translateY(-3px); }
+.social-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.social-icon:hover { 
+  background: var(--n-gradient-primary); 
+  transform: translateY(-3px); }
 
 /* =====================================================
    PAGE HEADER (sub-pages)

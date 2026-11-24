@@ -109,4 +109,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
   });
 
+  /* ---------- Instagram post embed ---------- */
+  document.querySelectorAll('.instagram-post[data-ig-url]').forEach(post => {
+    const rawUrl = post.getAttribute('data-ig-url');
+    const embedUrl = `${rawUrl.replace(/\/$/, '')}/embed/`;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.title = 'Postingan Instagram Roti’O Indonesia';
+    iframe.setAttribute('loading', 'lazy');
+    iframe.setAttribute('scrolling', 'no');
+    iframe.setAttribute('allowtransparency', 'true');
+
+    post.appendChild(iframe);
+  });
+
 });

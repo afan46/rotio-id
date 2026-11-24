@@ -77,20 +77,20 @@
   <div class="container">
     <div class="row text-center g-4">
       <div class="col-6 col-md-3 stat-item reveal">
-        <div class="stat-number">480+</div>
-        <div class="stat-label">Projects delivered</div>
+        <div class="stat-number">900+</div>
+        <div class="stat-label">Outlet di Seluruh Indonesia</div>
       </div>
       <div class="col-6 col-md-3 stat-item reveal">
-        <div class="stat-number">12 yrs</div>
-        <div class="stat-label">Industry experience</div>
+        <div class="stat-number">14 years</div>
+        <div class="stat-label">Menemani Pelanggan</div>
       </div>
       <div class="col-6 col-md-3 stat-item reveal">
-        <div class="stat-number">96%</div>
-        <div class="stat-label">Client retention</div>
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Halal & Freshly Baked</div>
       </div>
       <div class="col-6 col-md-3 stat-item reveal">
-        <div class="stat-number">34</div>
-        <div class="stat-label">Countries served</div>
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Kota & Kabupaten Terjangkau</div>
       </div>
     </div>
   </div>
@@ -198,12 +198,10 @@
         <h2 class="section-title">Dapatkan informasi terkini dan ikuti perjalanan kehangatan kami di <span style="color: #e67e22;">@rotio.indonesia</span></h2>
       </div>
     </div>
-    <div class="row g-3 instagram-grid">
-      <?php for ($i = 0; $i < 8; $i++): ?>
-        <div class="col-md-6 col-lg-4 reveal">
-          <div class="card">Click me</div>
-        </div>
-      <?php endfor; ?>
+    <div class="instagram-grid">
+      <div class="instagram-post" data-ig-url="https://www.instagram.com/p/DfLZPxUkoa3/"></div>
+      <div class="instagram-post" data-ig-url="https://www.instagram.com/p/Dcxsb_nSu4s/"></div>
+      <div class="instagram-post" data-ig-url="https://www.instagram.com/p/DgHTlmQyGsE/"></div>
     </div>
   </div>
 </section>
